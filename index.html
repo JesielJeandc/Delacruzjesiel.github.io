@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Shops</title>
     <style>
-        h1 {
+       h1 {
             text-align: center;
             background-color: darkcyan;
             height: 60px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             letter-spacing: 20px;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                letter-spacing: normal;
+                font-size: 1.5em;
+                white-space: normal;
+                padding: 20px;
+            }
+          }
         
         .product-container {
             display: flex;
