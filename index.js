@@ -76,24 +76,18 @@ function calculateChange() {
         change.value = '';
     }
 }
-        document.getElementById('payButton').addEventListener('click', function() {
-            // Clear the carts textarea
-            document.getElementById('carts').value = '';
 
-            // Clear the total, cash, and change fields
-            document.getElementById('total').value = '';
-            document.getElementById('cash').value = '';
-            document.getElementById('change').value = '';
 
-            // Reset the quantity fields for each product
-            const quantities = document.querySelectorAll('[id^=qty]');
-            quantities.forEach(function(qty) {
-                qty.value = '';
-            });
+function pay() {
 
-            // You can add additional actions here, such as showing a confirmation message
-            alert('Payment successful. The cart has been reset.');
-        });
+    carts.textContent = "";
+
+    total.value = "";
+    cash.value = "";
+    change.value = "";
+
+    alert(" Thanks! So excited for your new Laptop Arrived");
+}
 
 qty1.addEventListener("keyup", addOrder);
 qty2.addEventListener("keyup", addOrder);
